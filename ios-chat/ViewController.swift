@@ -38,7 +38,7 @@ class ViewController: UIViewController , GIDSignInUIDelegate{
         self.view.backgroundColor = UIColor(red: 255/255, green: 250/255, blue: 205/255, alpha: 1.0)
         // color the navbar
         navBar.topItem?.title = "Impulse Labs Demo"
-        navBar.topItem?.prompt = "What would you like to do today?"
+        navBar.topItem?.prompt = "Friendly gneiss will countermand my kaftan"
         navBar.backgroundColor = UIColor(red: 150/255, green: 195/255, blue: 150/255, alpha: 1.0)
         
         //signInButton.colorScheme = GIDSignInButtonColorScheme.light
