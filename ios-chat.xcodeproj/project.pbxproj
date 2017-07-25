@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		312DADAC1F2009E8004140B8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 312DADAB1F2009E8004140B8 /* GoogleService-Info.plist */; };
+		3199AD141F27BEC90013A8E4 /* pcb-bg-rnd-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 3199AD121F27BEC90013A8E4 /* pcb-bg-rnd-small.png */; };
+		3199AD151F27BEC90013A8E4 /* rockfuel.png in Resources */ = {isa = PBXBuildFile; fileRef = 3199AD131F27BEC90013A8E4 /* rockfuel.png */; };
 		31BC5D4A1F2008ED0002F047 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BC5D491F2008ED0002F047 /* AppDelegate.swift */; };
 		31BC5D4C1F2008ED0002F047 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BC5D4B1F2008ED0002F047 /* ViewController.swift */; };
 		31BC5D4F1F2008ED0002F047 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31BC5D4D1F2008ED0002F047 /* Main.storyboard */; };
@@ -42,6 +44,8 @@
 		312DADAB1F2009E8004140B8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		312DADAD1F200A15004140B8 /* ios-chat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-chat-Bridging-Header.h"; sourceTree = "<group>"; };
 		312DADB11F203A12004140B8 /* GTMOAuth2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GTMOAuth2; path = Pods/GTMOAuth2; sourceTree = "<group>"; };
+		3199AD121F27BEC90013A8E4 /* pcb-bg-rnd-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pcb-bg-rnd-small.png"; path = "../../../../../Google Drive/Business/Impulse Labs/branding/pcb-bg-rnd-small.png"; sourceTree = "<group>"; };
+		3199AD131F27BEC90013A8E4 /* rockfuel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rockfuel.png; path = "../../../../../Google Drive/Business/Impulse Labs/branding/rockfuel.png"; sourceTree = "<group>"; };
 		31BC5D461F2008ED0002F047 /* ios-chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		31BC5D491F2008ED0002F047 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31BC5D4B1F2008ED0002F047 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +139,8 @@
 				31BC5D4D1F2008ED0002F047 /* Main.storyboard */,
 				31BC5D501F2008ED0002F047 /* Assets.xcassets */,
 				31BC5D521F2008ED0002F047 /* LaunchScreen.storyboard */,
+				3199AD121F27BEC90013A8E4 /* pcb-bg-rnd-small.png */,
+				3199AD131F27BEC90013A8E4 /* rockfuel.png */,
 				31BC5D551F2008ED0002F047 /* Info.plist */,
 				312DADAD1F200A15004140B8 /* ios-chat-Bridging-Header.h */,
 			);
@@ -290,6 +296,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				31BC5D541F2008ED0002F047 /* LaunchScreen.storyboard in Resources */,
+				3199AD141F27BEC90013A8E4 /* pcb-bg-rnd-small.png in Resources */,
+				3199AD151F27BEC90013A8E4 /* rockfuel.png in Resources */,
 				312DADAC1F2009E8004140B8 /* GoogleService-Info.plist in Resources */,
 				31BC5D511F2008ED0002F047 /* Assets.xcassets in Resources */,
 				31BC5D4F1F2008ED0002F047 /* Main.storyboard in Resources */,
