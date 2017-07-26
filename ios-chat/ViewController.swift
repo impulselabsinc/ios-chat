@@ -14,7 +14,7 @@ class ViewController: UIViewController , GIDSignInUIDelegate{
     @IBOutlet weak var signInButton: GIDSignInButton!
     @IBOutlet weak var disconnectButton: UIButton!
     @IBOutlet weak var loginMessage: UILabel!
-    fileprivate let signOutButton: UIBarButtonItem = UIBarButtonItem(title: nil, style: .done, target: nil, action: nil)
+    let signOutButton: UIBarButtonItem = UIBarButtonItem(title: nil, style: .done, target: nil, action: nil)
     
     
     
@@ -112,3 +112,10 @@ class ViewController: UIViewController , GIDSignInUIDelegate{
 
 }
 
+// required for unit testing - because you should not call loadView() directly
+// https://www.natashatherobot.com/ios-testing-view-controllers-swift/
+extension UIViewController{
+    func preloadView(){
+        _ = view
+    }
+}

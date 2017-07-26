@@ -9,7 +9,7 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
@@ -69,8 +69,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             
         }
     }
-    
+
+}
+
+extension AppDelegate: GIDSignInDelegate{
     // MARK: Google SignIn methods
+    
+    // Google Sign-in Handler
     func sign(_ signIn:GIDSignIn!, didSignInFor user:GIDGoogleUser!, withError error: Error!){
         if let error = error {
             print("\(error.localizedDescription)")
@@ -100,6 +105,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         }
     }
     
+    // Google Disconnect Handler
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!){
         
         NotificationCenter.default.post(
@@ -107,7 +113,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             object: nil,
             userInfo: nil)
     }
-    
-
 }
 
