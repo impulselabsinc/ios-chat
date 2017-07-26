@@ -17,7 +17,6 @@ class ViewController: UIViewController , GIDSignInUIDelegate{
     let signOutButton: UIBarButtonItem = UIBarButtonItem(title: nil, style: .done, target: nil, action: nil)
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,7 +26,7 @@ class ViewController: UIViewController , GIDSignInUIDelegate{
         setupSignOutButton()
         disconnectButton.isHidden = true
         GIDSignIn.sharedInstance().uiDelegate = self
-        //GIDSignIn.sharedInstance().signInSilently()
+        GIDSignIn.sharedInstance().signInSilently()
         
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(ViewController.receiveToggleAuthUINotification(_:)),
