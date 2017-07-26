@@ -73,7 +73,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 extension AppDelegate: GIDSignInDelegate{
-    // MARK: Google SignIn methods
+    // MARK: Google SignIn handlers
     
     // Google Sign-in Handler
     func sign(_ signIn:GIDSignIn!, didSignInFor user:GIDGoogleUser!, withError error: Error!){
