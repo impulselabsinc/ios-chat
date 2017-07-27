@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import ios_chat
 
 class AppDelegateTests: XCTestCase {
     

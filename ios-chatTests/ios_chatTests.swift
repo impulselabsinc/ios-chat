@@ -11,9 +11,17 @@ import XCTest
 
 class ios_chatTests: XCTestCase {
     
+    var viewController: ViewController!
+    
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        viewController = storyboard.instantiateInitialViewController() as! ViewController
+        
+        UIApplication.shared.keyWindow!.rootViewController = viewController
+        
+        XCTAssertNotNil(viewController.view)
     }
     
     override func tearDown() {
@@ -31,6 +39,17 @@ class ios_chatTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func testUIElementsExist(){
+        XCTAssertNotNil(viewController.loginMessage)
+        XCTAssertNotNil(viewController.navBar)
+        XCTAssertNotNil(viewController.signInButton)
+        XCTAssertNotNil(viewController.signOutButton)
+    }
+    
+    func testViewControllerLoginMessageNotLoggedIn() {
+        XCTAssertTrue(viewController.loginMessage.text == "You are not logged in")
     }
     
 }
